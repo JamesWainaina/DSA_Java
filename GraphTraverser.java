@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 class GraphTraverser {
-
     public static void depthFirstTraversal(Vertex start, ArrayList<Vertex> visitedVertices) {
         System.out.println(start.getData());
 
@@ -20,7 +19,6 @@ class GraphTraverser {
         while (!visitQueue.isEmpty()) {
             Vertex current = visitQueue.dequeue();
             System.out.println(current.getData());
-
             for (Edge e: current.getEdges()) {
                 Vertex neighbor = e.getEnd();
                 if (!visitedVertices.contains(neighbor)) {
