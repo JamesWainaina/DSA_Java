@@ -24,7 +24,7 @@ public class uniquePaths {
         
     }
 
-    public int uniquePaths(int m, int n) {
+    public int calculateUniquePaths(int m, int n) {
 
         int[][] dp = new int[m][n];
 
