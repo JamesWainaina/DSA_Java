@@ -1,4 +1,4 @@
-/*
+ class generateParenthesis{/*
 1039. Minimum Score Triangulation of Polygon
 Solved
 Medium

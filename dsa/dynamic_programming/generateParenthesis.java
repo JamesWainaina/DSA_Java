@@ -23,14 +23,14 @@ class generateParenthesis{
 		return res;
 	}
 	private void dfs(int openP, int closeP, String s, int n, List<String> res) {
-		if (openP == closeP && openP + closeP == n * 2){
+		if (openP == n && closeP == n){
 			res.add(s);
 			return;
 		}
 		if (openP < n){
 			dfs(openP + 1, closeP, s + "(",n ,res);
 		}
-		if (closeP < n) {
+		if (closeP < openP) {
 			dfs(openP, closeP + 1, s + ")", n, res);
 		}
 	}
